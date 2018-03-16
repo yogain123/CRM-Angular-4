@@ -12,7 +12,6 @@ import { TestComponent } from './test/test.component';
 import { StorageService } from './StorageService.service';
 import { PostService } from './services/post.service';
 import { IdFilterPipe } from './id-filter.pipe';
-import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 //import { HeadComponent } from './header/head/head.component';
 
@@ -24,7 +23,6 @@ import { NavbarComponent } from './navbar/navbar.component';
     HomeComponent,
     TestComponent,
     IdFilterPipe,
-    HeaderComponent,
     NavbarComponent,
     //HeadComponent,
   ],

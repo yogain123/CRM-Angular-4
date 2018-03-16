@@ -39,7 +39,7 @@ class Person{
 export class AddComponent implements OnInit{
 //-------------------------------------------------------------------------------
 //personDetails: any = {firstName:"",lastName:"",email:"",phno:{mainNumber:"",extensionNumber:""},address:[{city:"",country:""},{city:"",country:""}]};
-
+name : string = "Yogendra";
 form = new FormGroup({
     firstName : new FormControl('',[Validators.minLength(3),Validators.required]),
     lastName : new FormControl(),
