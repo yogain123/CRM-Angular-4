@@ -5,6 +5,7 @@ import 'rxjs/add/operator/map'
 
 @Injectable()
 export class PostService {
+  
 
   constructor(public http : Http) { }
   getPost(url : string){
