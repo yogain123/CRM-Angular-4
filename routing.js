@@ -59,20 +59,24 @@ router.post("/addingCustomer", (req, res) => {
   });
 });
 
-router.get("/gettingAllCustomer", (req, res) => {
+//------using service (other function to do getting work , as this function will be helpfull to be used in other place for doing same work,,
+// someone else can also use this service)
+router.get("/gettingAllCustomer", getAllEmployeeDataFromDatabase);
 
+function getAllEmployeeDataFromDatabase(req,res){
   customer.find().then((data) => {
-
+    
     res.send(data);
 
   });
+}
 
-});
+//---------------------------------//---------------------------------//---------------------------------//---------------------------------
 
 router.get("/hola", (req, res) => {
 
   console.log("holaslasasdfsdfodsjfgdsgokmdfsfdsafdsafasdfYOGENDRA");
-  res.send("Angular Rocks");
+  res.render("./hola.html");
 
 });
 
